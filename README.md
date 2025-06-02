@@ -47,6 +47,7 @@ GitHub: [@WKingston17](https://github.com/WKingston17)
 - Interface multilingue (français/anglais)
 - Thème sombre/clair
 ![image](https://github.com/user-attachments/assets/cd9c230b-3882-4b7c-b311-00daa8cac95e)
+![image](https://github.com/user-attachments/assets/027112b3-6be2-443e-af11-6af4da6a1bb9)
 
 ## 🚀 Installation
 
