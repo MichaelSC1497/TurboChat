@@ -1207,7 +1207,7 @@ def get_model_adapter():
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Load model on startup
+    # Load model on startup - Fixed indentation issues (June 2, 2025)
     global model_instance
     model_instance = None  # Initialize to None
     
