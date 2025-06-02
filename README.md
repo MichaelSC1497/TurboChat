@@ -1,5 +1,11 @@
 # TurboChat 🚀
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://reactjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)](https://fastapi.tiangolo.com/)
+[![GitHub stars](https://img.shields.io/github/stars/WKingston17/TurboChat.svg)](https://github.com/WKingston17/TurboChat/stargazers)
+
 Une application de chat avancée avec IA intégrant RAG (Retrieval-Augmented Generation), recherche web, et système de quiz éducatif.
 
 ## 👤 Auteur
