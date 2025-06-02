@@ -11,9 +11,10 @@ Une application de chat avancée avec IA intégrant RAG (Retrieval-Augmented Gen
 ## 👤 Auteur
 
 **Nazir YOUSSOUF YAYE**  
-GitHub: [@WKingston17](https://github.com/WKingston17)
 
 Linkedin: [@Nazir YOUSSOUF YAYE](https://www.linkedin.com/in/nazir-youssouf-yaye)
+GitHub: [@WKingston17](https://github.com/WKingston17)
+
 ## 🌟 Fonctionnalités
 
 ### 💬 Chat Intelligent
