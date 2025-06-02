@@ -46,7 +46,12 @@ GitHub: [@WKingston17](https://github.com/WKingston17)
 - Métriques de tokens et performance
 - Interface multilingue (français/anglais)
 - Thème sombre/clair
+
+![image](https://github.com/user-attachments/assets/303fef91-e554-46d8-aaff-7c31f07fb6e3)
 ![image](https://github.com/user-attachments/assets/cd9c230b-3882-4b7c-b311-00daa8cac95e)
+![image](https://github.com/user-attachments/assets/07e57e69-b7fe-453b-b62d-415ed6bc19a7)
+![image](https://github.com/user-attachments/assets/63ebb3a2-72cb-48d8-b03e-a4f9fd2850f9)
+
 
 
 ## 🚀 Installation
