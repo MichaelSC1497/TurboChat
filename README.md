@@ -12,7 +12,7 @@ Une application de chat avancée avec IA intégrant RAG (Retrieval-Augmented Gen
 
 **Nazir YOUSSOUF YAYE**  
 GitHub: [@WKingston17](https://github.com/WKingston17)
-
+Linkedin: [@Nazir YOUSSOUF YAYE]([https://github.com/WKingston17](https://www.linkedin.com/in/nazir-youssouf-yaye)
 ## 🌟 Fonctionnalités
 
 ### 💬 Chat Intelligent
@@ -137,6 +137,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 🙏 Remerciements
 
+- Guillaume VINEY, Jérémy BOURGUET, Ninot ASSANI, Osman SAID ALI
 - L'équipe LangChain pour leur excellent framework
 - La communauté llama.cpp pour les modèles locaux
 - Tous les contributeurs open source
