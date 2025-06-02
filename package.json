@@ -1,0 +1,25 @@
+{
+  "name": "turbochat",
+  "version": "1.0.0",
+  "description": "Assistant IA conversationnel avec support de modèles LLM locaux et APIs externes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./start_app.sh"
+  },
+  "keywords": [
+    "ai",
+    "chatbot",
+    "llm",
+    "local-models",
+    "rag",
+    "quiz",
+    "education"
+  ],
+  "author": "TurboChat Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "fastapi": "^0.68.0",
+    "uvicorn": "^0.15.0"
+  }
+}

@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f7f9fc;
+}
+
+/* Polissement de l'interface */
+a {
+  color: #1890FF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Animation d'apparition générale */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Chat styles */
+.chat-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  max-width: 90%;
+  animation: fadeIn 0.3s ease-in-out;
+  transition: all 0.2s ease;
+}
+
+.chat-message:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.user-message {
+  background-color: #e6f7ff;
+  margin-left: auto;
+  border-top-right-radius: 0;
+}
+
+.bot-message {
+  background-color: #ffffff;
+  margin-right: auto;
+  border-top-left-radius: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.message-input {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  padding: 1rem;
+  border-top: 1px solid #eaeaea;
+}
+
+/* Animation de frappe */
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #40a9ff;
+  border-radius: 50%;
+  margin-right: 4px;
+  animation: typingAnimation 1.5s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes typingAnimation {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Styles pour l'interface de modèle */
+.model-selector {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.model-selector:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour l'affichage du contenu Markdown */
+.markdown-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.markdown-content code {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.markdown-content pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.markdown-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.markdown-content blockquote {
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #ddd;
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.markdown-content a {
+  color: #1890FF;
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.markdown-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.markdown-content th {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Amélioration des boutons pour mobile */
+@media (max-width: 768px) {
+  .chat-message {
+    max-width: 95%;
+  }
+  
+  button {
+    padding: 0.5rem 0.8rem;
+  }
+  
+  .model-selector {
+    padding: 0.8rem;
+  }
+}
+
+/* Optimisations pour les écrans plus petits */
+@media (max-width: 480px) {
+  .chat-message {
+    padding: 0.75rem;
+    max-width: 98%;
+  }
+  
+  .message-input {
+    padding: 0.75rem;
+  }
+  
+  button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+} 
